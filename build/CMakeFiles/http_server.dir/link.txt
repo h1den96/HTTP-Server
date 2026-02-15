@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/http_server.dir/main.cpp.o CMakeFiles/http_server.dir/HttpServer.cpp.o -o /home/h1den/Documents/http-server/http_server

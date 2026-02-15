@@ -1,5 +1,5 @@
 #include <iostream>
-#include <http-server.hpp>
+#include "HttpServer.hpp"
 /*
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -7,7 +7,8 @@
 */
 int main (int argc, char** argv){
 
-  
+  HttpServer server;
+  server.initServer();  
 
   return 0;
 }
