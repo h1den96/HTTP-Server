@@ -47,16 +47,20 @@ CMakeFiles/http_server.dir/HttpServer.cpp.o: /home/h1den/Documents/http-server/H
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
@@ -90,6 +94,7 @@ CMakeFiles/http_server.dir/HttpServer.cpp.o: /home/h1den/Documents/http-server/H
   /usr/include/c++/11/system_error \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -465,8 +470,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
@@ -535,8 +538,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -545,21 +546,19 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/c++/11/cctype:
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/usr/include/c++/11/cerrno:
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/usr/include/c++/11/system_error:
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -568,6 +567,14 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/ctype.h:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/c++/11/bits/stl_pair.h:
+
+/usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -578,8 +585,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -625,6 +630,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/typeinfo:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/ostream:
@@ -667,6 +676,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/asm-generic/bitsperlong.h:
 
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/11/ios:
@@ -674,8 +687,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/wchar.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -711,6 +722,12 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/features.h:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/c++/11/bits/charconv.h:
@@ -721,6 +738,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/bits/functional_hash.h:
 
+/usr/include/c++/11/system_error:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/c++/11/string_view:
@@ -730,6 +751,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/c++/11/cerrno:
 
 /usr/include/c++/11/cstdio:
 
@@ -789,6 +814,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/type_traits:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/c++/11/vector:
+
 /usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
@@ -821,12 +850,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -850,11 +873,3 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:

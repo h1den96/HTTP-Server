@@ -9,6 +9,7 @@ int main (int argc, char** argv){
 
   HttpServer server;
   server.initServer();  
+  server.runServer();
 
   return 0;
 }

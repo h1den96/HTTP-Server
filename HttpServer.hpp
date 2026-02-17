@@ -14,5 +14,5 @@ public:
   ~HttpServer();
   int initServer();
   void runServer();
-  // void handleClient();
+  void handleClient(int);
 };

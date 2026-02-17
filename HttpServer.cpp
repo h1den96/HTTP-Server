@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstring>
 #include <unistd.h>
+#include <vector>
 
 HttpServer::HttpServer() : _port("8080"), _backlog(10) {
 
@@ -15,7 +16,6 @@ HttpServer::HttpServer() : _port("8080"), _backlog(10) {
 
 HttpServer::~HttpServer() {
   freeaddrinfo(res);
-
 }
 
 int HttpServer::initServer() {  
@@ -48,21 +48,47 @@ int HttpServer::initServer() {
 
 void HttpServer::runServer(){
   
-  struct sockaddr_storage their_addr, addr_size;
+  struct sockaddr_storage their_addr;
+  socklen_t addr_size = sizeof(their_addr);
 
   while(1){
     addr_size = sizeof(their_addr);
     int newfd = accept(sockfd, (struct sockaddr *)&their_addr, &addr_size);
+    
+    std::cout << "Connection accepted on sockfd = " << newfd << std::endl;
 
     if (newfd == -1) {
       std::cerr << "server accept error: " << std::strerror(errno) << std::endl;
       continue;
     }
     
-    //  handleClient(newfd);
+    handleClient(newfd);
+
     close(newfd);
   }  
 }
 
+// For now the server echoes the client's message back
+void HttpServer::handleClient(int newfd){
+  
+  std::vector<char> buff(1024);
+  std::string message = "Welcome to my echo HTTP server!!!\n";
+  buff.assign(message.begin(), message.end());  
 
+  send(newfd, buff.data(), buff.size(), 0);
+  buff.clear();
 
+  while (1){
+    
+    std::vector<char> read_buff(1024);
+    int response = recv(newfd, read_buff.data(), read_buff.size(), 0);
+
+    if (response <= 0){
+      break;
+    }
+    
+    // handleRequest();
+
+    send(newfd, read_buff.data(), response, 0);
+  }
+}
