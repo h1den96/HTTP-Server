@@ -45,6 +45,7 @@ CMakeFiles/http_server.dir/HttpServer.cpp.o: /home/h1den/Documents/http-server/H
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
@@ -87,6 +88,7 @@ CMakeFiles/http_server.dir/HttpServer.cpp.o: /home/h1den/Documents/http-server/H
   /usr/include/c++/11/new \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/streambuf \
   /usr/include/c++/11/string \
@@ -269,16 +271,20 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/bits/stl_iterator.h \
   /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_pair.h \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/clocale \
@@ -311,6 +317,7 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
   /usr/include/c++/11/system_error \
   /usr/include/c++/11/type_traits \
   /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -556,6 +563,8 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
@@ -596,12 +605,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/clocale:
@@ -623,8 +626,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/c++/11/pstl/pstl_config.h:
 
 /usr/include/c++/11/bits/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/11/istream:
 
@@ -746,11 +747,21 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/string_view:
 
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11/bits/move.h:
+
 /usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/cctype:
 
@@ -806,6 +817,10 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/c++/11/new:
 
+/usr/include/c++/11/sstream:
+
+/usr/include/sched.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -844,8 +859,6 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 
 /usr/include/pthread.h:
 
-/usr/include/sched.h:
-
 /usr/include/stdio.h:
 
 /usr/include/string.h:
@@ -853,6 +866,8 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/strings.h:
 
@@ -869,7 +884,3 @@ CMakeFiles/http_server.dir/main.cpp.o: /home/h1den/Documents/http-server/main.cp
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/asm/socket.h:
-
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:

@@ -1,7 +1,9 @@
 #include <iostream>
+#include <vector>
 #include <netdb.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+#include <string>
 
 class HttpServer {
 private:
@@ -15,4 +17,5 @@ public:
   int initServer();
   void runServer();
   void handleClient(int);
+  std::string handleRequest(std::vector<char>, int);
 };
